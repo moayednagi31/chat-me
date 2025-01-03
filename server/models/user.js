@@ -10,7 +10,8 @@ const jwt = require('jsonwebtoken');
 /**
  * Bcrypt Module.
  */
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 
 /**
  * Define User Schema.
