@@ -7,7 +7,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-const cors = require('cors'); // إضافة دعم CORS
 
 /**
  * Include socket.io handler.
@@ -24,19 +23,13 @@ const usersRouter = require('./routes/users');
 const app = express();
 
 /**
- * Middleware
+ * Express Middleware's.
  */
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Enable CORS (اختياري)
-app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-    credentials: true,
-}));
 
 /**
  * Routes
@@ -47,7 +40,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/account', require('./routes/account'));
 
 /**
- * Error Handling
+ * Errors handling
  */
 app.use((err, req, res, next) => {
     if (err.name === 'MongoError' || err.name === 'ValidationError' || err.name === 'CastError') {
@@ -87,14 +80,6 @@ mongoose.connection.on('error', (err) => {
 
 mongoose.connection.on('disconnected', () => {
     console.log('Mongoose disconnected');
-});
-
-/**
- * Start Server
- */
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
 });
 
 module.exports = app;
