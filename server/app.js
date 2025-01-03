@@ -54,18 +54,21 @@ app.use((err, req, res, next) => {
 });
 
 /**
- * Connect to MongoDB Atlas
+ * Connect to MongoDB Atlas using async/await
  */
-mongoose.connect(process.env.DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}, (err) => {
-    if (err) {
+async function connectToDatabase() {
+    try {
+        await mongoose.connect(process.env.DB_URL, {
+            family: 4,  // Optional: to force the use of IPv4
+        });
+        console.log('Connected successfully to MongoDB Atlas');
+    } catch (err) {
         console.error('Failed to connect to MongoDB Atlas:', err.message);
         process.exit(1); // Terminate the process if connection fails
     }
-    console.log('Connected successfully to MongoDB Atlas');
-});
+}
+
+connectToDatabase();
 
 /**
  * Monitor Mongoose connection events
