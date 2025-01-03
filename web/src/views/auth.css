@@ -1,0 +1,164 @@
+/* auth.css */
+
+/* الحاوية الرئيسية */
+.auth-container {
+  text-align: center;
+  direction: ltr;
+  font-family: 'Cairo', sans-serif;
+  max-width: 600px; /* زيادة عرض الحاوية */
+  margin: auto;
+  padding: 40px; /* زيادة الحشو الداخلي */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* ظل ناعم */
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* الشعار */
+.auth-container img {
+  width: 320px; /* زيادة عرض الشعار */
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* العنوان */
+.auth-header {
+  font-size: 30px; /* حجم أكبر للعنوان */
+  color: #4a5568;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* الحقول */
+.auth-form-control {
+  margin-bottom: 20px;
+  padding: 15px; /* حشو أكبر */
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  font-size: 18px; /* حجم النص داخل الحقول */
+  text-align: left;
+}
+
+.auth-form-control:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 8px rgba(49, 130, 206, 0.5); /* ظل عند التركيز */
+}
+
+/* الأزرار */
+.auth-button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #3182ce;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: #2b6cb0;
+  transform: scale(1.05); /* تأثير التكبير عند التمرير */
+}
+
+/* الروابط */
+.auth-footer {
+  font-size: 16px;
+  color: #a0aec0;
+  margin-top: 25px;
+}
+
+.auth-footer a {
+  text-decoration: none;
+  color: #3182ce;
+  transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+  color: #2b6cb0;
+}
+/* auth.css */
+
+/* الحاوية الرئيسية */
+.auth-container {
+  text-align: center;
+  direction: ltr;
+  font-family: 'Cairo', sans-serif;
+  max-width: 600px; /* زيادة عرض الحاوية */
+  margin: auto;
+  padding: 40px; /* زيادة الحشو الداخلي */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* ظل ناعم */
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* الشعار */
+.auth-container img {
+  width: 320px; /* زيادة عرض الشعار */
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* العنوان */
+.auth-header {
+  font-size: 30px; /* حجم أكبر للعنوان */
+  color: #4a5568;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* الحقول */
+.auth-form-control {
+  margin-bottom: 20px;
+  padding: 15px; /* حشو أكبر */
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  font-size: 18px; /* حجم النص داخل الحقول */
+  text-align: left;
+}
+
+.auth-form-control:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 8px rgba(49, 130, 206, 0.5); /* ظل عند التركيز */
+}
+
+/* الأزرار */
+.auth-button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #3182ce;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: #2b6cb0;
+  transform: scale(1.05); /* تأثير التكبير عند التمرير */
+}
+
+/* الروابط */
+.auth-footer {
+  font-size: 16px;
+  color: #a0aec0;
+  margin-top: 25px;
+}
+
+.auth-footer a {
+  text-decoration: none;
+  color: #3182ce;
+  transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+  color: #2b6cb0;
+}
