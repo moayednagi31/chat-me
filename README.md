@@ -14,7 +14,7 @@ A real-time chat application similar to WhatsApp built using the MERN stack.
 - Database: MongoDB
 
 ##  Project Structure
-- client → Frontend (React)
+- web → Frontend (React)
 - server → Backend (API & logic)
 
 ## How to Run
